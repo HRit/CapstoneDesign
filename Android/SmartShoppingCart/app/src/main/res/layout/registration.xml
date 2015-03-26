@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Smart Shopping Cart"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingTop="70dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="30dp"
+        android:id="@+id/LoginLayout">
+
+        <TextView
+            android:id="@+id/userIDLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="ID  : "
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/IDEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/userIDLabel"
+            android:layout_alignBottom="@id/userIDLabel"
+            android:layout_toLeftOf="@id/loginBtn"
+            android:layout_toRightOf="@id/userIDLabel" />
+
+        <TextView
+            android:id="@+id/pwdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userIDLabel"
+            android:text="Password  : "
+            android:textColor="#ff222222"
+            android:padding="10dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/pwdEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/loginBtn"
+            android:layout_toRightOf="@id/pwdLabel"
+            android:layout_alignBaseline="@id/pwdLabel"
+            android:inputType="textPassword"/>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7pt"
+            android:textSize="18dp"
+            android:text="Login"
+            android:gravity="center"
+            android:layout_alignBottom="@id/pwdLabel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/userIDLabel" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/LoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/facebookLinkedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7pt"
+            android:textSize="20dp"
+            android:text="페이스북 연동"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/registrationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7pt"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="회원가입" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
